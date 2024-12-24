@@ -1,0 +1,60 @@
+.container {
+    border: 2px solid black;
+    padding: 16px;
+    width: 300px;
+    margin-bottom: 16px;
+    height: 300px;
+    overflow: hidden; /*Esconde o conteúdo que está vazando da div*/
+    background-color: black;
+}
+
+.name1 {
+    background-color: greenyellow;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.name2 {
+    background-color: greenyellow;
+    width: min-content;
+    margin-bottom: 5px;
+}
+
+.name3 {
+    background-color: greenyellow;
+    width: max-content;
+    margin-bottom: 5px;
+}
+
+.item {
+    background-color: orange;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: black;
+   
+}
+
+.fit-content .item {
+    width: fit-content; /*fit-content; Ajusta a largura de acordo com o tamanho do item, ao invés de 100% da tela*/
+}
+
+.min-content .item {
+    width: min-content; /*min-content; Ajusta todo item levando em consideração a menor palavra com a menor largura possível*/
+}
+
+.max-content .item {
+    width: max-content; /*max-content; Ajusta todo item levando em consideração o maior conteúdo dentro da div, e aplica aos demais*/
+}
+
+.overflow-hidden {
+    overflow: hidden; /*esconde o conteúdo que excede o tamanho da div*/
+}
+
+.overflow-scroll {
+    overflow: scroll; /*adiciona uma barra de rolagem vertical no conteúdo que excedeu o tamanho da div*/
+}
+
+.overflow-auto {
+    overflow: auto; /*adiciona uma barra de rolagem automaticamente levando em consideração o sentido em que o conteúdo excedeu o tamanho da div*/
+}
+
